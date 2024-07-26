@@ -1,1 +1,1 @@
-# Code-Chef-Solutions
+# Code Chef Solutions
