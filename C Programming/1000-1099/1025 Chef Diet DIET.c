@@ -2,9 +2,16 @@
 //k --> protin to eat each day in grams
 
 //eat --> if he is eating continuosly in sufficient manner
+//str --> storage variable
 
 //if Chef able to eat protin in asked manner print YES
 //otherwise print no with day no.
+
+// Logic:
+    // case 1: on specific day Chef gets exactly required protin
+    // case 2: he buys more than required protein, so he stores it
+    // case 3: he buys insufficient protein and we have stored protein enough to fulfil requirement of specific day
+    // case 4: he buys insufficient protein and we don't have enough even after adding stored protein to fulfil requirement of specific day 
 #include <stdio.h>
 int main(void)
 {
