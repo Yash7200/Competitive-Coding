@@ -1,0 +1,9 @@
+<h3>Problem Simplification: </h3>
+<ul>
+<li></li>
+</ul>
+
+<h3>Logic:</h3>
+<ul>
+<li></li>
+</ul>
