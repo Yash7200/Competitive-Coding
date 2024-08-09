@@ -1,0 +1,31 @@
+<h3>Problem Simplification:</h3>
+<ul>
+<li></li>
+</ul>
+
+<h3>Logic for string to Integer:</h3>
+<ul>
+<li>We'll receive no. of testcases & testcases Input in separate new lines as string.</li>
+<li>Use method chaining.</li>
+<li>Remove white space around input using trim method.</li>
+<li>Split the input by newline which will convert input to array of strings. which will look similar as ["2" , "1 3", "4 5"]</li>
+<li>Pass such array to strToInt function call</li>
+<li>Create a function to convert string array to integer</li>
+<li>Remove the first element using shift method as we don't need it & we won't process <br/> [<em>Note:</em> chaining the shift method during function call will cause runtime error.]</li>
+<li>create a variable to store output of map method used to iterate over all array items of string Array.</li>
+<li>Each array item will be a string from that string we need integer into Number data type.</li>
+<li>Use method chaining inside first map method.</li>
+<li>Use split method which will split the string from white space & convert into array elements. we will have testcase input as array items. Ex. strArray = [ ["1", "3"], ["2", "4"] ]</li>
+<li>Use the map method to convert each sub-array item into Number. Ex. intArray = [ [1, 3], [2, 4] ]</li>
+<li>return this integer array.</li>
+<li>Now we can apply logic to solve the problem.</li>
+</ul>
+
+<h3>Logic to solve Problem:</h3>
+<ul>
+<li>Create function containing core logic to solve problem.</li>
+<li>Use forEach method to iterate over items & pass testcases as parameter of arrow function.</li>
+<li>In side arrow function, destructure variables from sub array.</li>
+<li>call the function & pass </li>
+<li>In function declaration, </li>
+</ul>

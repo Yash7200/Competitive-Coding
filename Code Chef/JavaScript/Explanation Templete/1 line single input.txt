@@ -1,0 +1,12 @@
+<h3>Problem Simplification:</h3>
+<ul>
+<li></li>
+</ul>
+
+<h3>Logic: </h3>
+<ul>
+<li>We will receive single integer as string.</li>
+<li>To convert that string to integer use Number function & use trim method inside it to remove space around it.</li>
+<li>Create function containing core logic to solve problem.</li>
+<li>In function declaration, </li>
+</ul>

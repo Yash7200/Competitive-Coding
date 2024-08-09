@@ -1,0 +1,20 @@
+<h3>Problem Simplification:</h3>
+<ul>
+<li></li>
+</ul>
+
+<h3>Logic for string to Integer: </h3>
+<ul>
+<li>We'll receive  space separated integers as string. Ex. "1 2"</li>
+<li>To convert received input first integer from the string we will use method chaining.</li>
+<li>We'll use trim method inside to remove space around input then chain it with split method to split string integer from space. Ex ["1", "2"]</li>
+<li>Chain the output of split method with map method & inside that use Number keyword to convert string item of subarray to string. Ex [1, 2]</li>
+<li>Use destructuring over array to store array values into variables.</li>
+</ul>
+
+<h3>Logic to solve Problem: </h3>
+<ul>
+<li>Create function containing core logic to solve problem.</li>
+<li>In function declaration, </li>
+<li></li>
+</ul>

@@ -1,0 +1,28 @@
+<h3>Problem Simplification:</h3>
+<ul>
+<li></li>
+</ul>
+
+<h3>Logic for string to Integer:</h3>
+<ul>
+<li>We'll receive no. of testcases & testcases Input in separate new lines as string.</li>
+<li>Use method chaining.</li>
+<li>Remove white space around input using trim method.</li>
+<li>Split the input by newline which will convert input to array of strings. which will look similar as ["2" , "1", "2"]</li>
+<li>Pass such array to strToInt function call</li>
+<li>Create a function to convert string array to integer</li>
+<li>Remove the first element using shift method as we don't need it & we won't process <br/> [<em>Note:</em> chaining the shift method during function call will cause runtime error.]</li>
+<li>create a variable which will strore output of map method used to iterate over all array items of string Array.</li>
+<li>Each array item will be a string from that string we need to convert it into integer using Number function.</li>
+<li>Inside Number function, use trim method to remove white space around input of testcase.</li>
+<li>return this integer array.</li>
+<li>Now we can apply logic to solve the problem.</li>
+</ul>
+
+<h3>Logic to solve Problem:</h3>
+<ul>
+<li>Create function containing core logic to solve problem.</li>
+<li>Use forEach method to iterate over items & pass testcases as parameter of arrow function.</li>
+<li>In side arrow function, call the function & pass testcase</li>
+<li>In function declaration, </li>
+</ul>
