@@ -1,1 +1,1 @@
-# Code Chef Solutions
+# Competitive Coding
