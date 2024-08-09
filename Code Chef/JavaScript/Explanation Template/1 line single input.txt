@@ -3,10 +3,15 @@
 <li></li>
 </ul>
 
-<h3>Logic: </h3>
+<h3>Logic for String to Integer: </h3>
 <ul>
-<li>We will receive single integer as string.</li>
+<li>In data event listener (for receiving input), We will receive single integer as string.</li>
 <li>To convert that string to integer use Number function & use trim method inside it to remove space around it.</li>
+</ul>
+
+<h3>Logic to solve Problem:</h3>
+<ul>
 <li>Create function containing core logic to solve problem.</li>
 <li>In function declaration, </li>
+<li></li>
 </ul>

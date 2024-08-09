@@ -5,7 +5,7 @@
 
 <h3>Logic for string to Integer:</h3>
 <ul>
-<li>We'll receive no. of testcases & testcases Input in separate new lines as string.</li>
+<li>In data event listener (for receiving input), We'll receive no. of testcases & testcases Input in separate new lines as string.</li>
 <li>Use method chaining.</li>
 <li>Remove white space around input using trim method.</li>
 <li>Split the input by newline which will convert input to array of strings. which will look similar as ["2" , "1", "2"]</li>

@@ -5,7 +5,7 @@
 
 <h3>Logic for string to Integer: </h3>
 <ul>
-<li>We'll receive  space separated integers as string. Ex. "1 2"</li>
+<li>In data event listener (for receiving input), We'll receive  space separated integers as string. Ex. "1 2"</li>
 <li>To convert received input first integer from the string we will use method chaining.</li>
 <li>We'll use trim method inside to remove space around input then chain it with split method to split string integer from space. Ex ["1", "2"]</li>
 <li>Chain the output of split method with map method & inside that use Number keyword to convert string item of subarray to string. Ex [1, 2]</li>
