@@ -12,6 +12,6 @@
 <h3>Logic to solve Problem:</h3>
 <ul>
 <li>Create function containing core logic to solve problem.</li>
-<li>In function declaration, </li>
+<li>Inside function declaration, </li>
 <li></li>
 </ul>

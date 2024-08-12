@@ -23,6 +23,6 @@
 <ul>
 <li>Create function containing core logic to solve problem.</li>
 <li>Use forEach method to iterate over items & pass testcases as parameter of arrow function.</li>
-<li>In side arrow function, call the function & pass testcase</li>
+<li>Inside arrow function, call the function & pass testcase</li>
 <li>In function declaration, </li>
 </ul>

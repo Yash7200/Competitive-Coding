@@ -25,7 +25,7 @@
 <ul>
 <li>Create function containing core logic to solve problem.</li>
 <li>Use forEach method to iterate over items & pass testcases as parameter of arrow function.</li>
-<li>In side arrow function, destructure variables from sub array.</li>
+<li>Inside arrow function, destructure variables from sub array.</li>
 <li>call the function & pass </li>
 <li>In function declaration, </li>
 </ul>
