@@ -1,0 +1,1 @@
+const createHelloWorld = () => () => "Hello World";
