@@ -6,14 +6,14 @@ const strToInt = (strArray) => {
     strArray.shift();
     
     const intArray = strArray.reduce((accumulator, _, index, array) => {
-            if(index % 2 === 0){
-                accumulator.push([
-                    array[index].split(' ').map(Number),
-                    array[index + 1].split(' ').map(Number)
-                ]);
-            }
-            
-            return accumulator;
+        if(index % 2 === 0){
+            accumulator.push([
+                array[index].split(' ').map(Number),
+                array[index + 1].split(' ').map(Number)
+            ]);
+        }
+        
+        return accumulator;
     }, []);
     
     return intArray;
