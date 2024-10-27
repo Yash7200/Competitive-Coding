@@ -3,10 +3,11 @@ process.stdin.on('data', (data) => input += data);
 
 const strToInt = (strArray) => {
     strArray.shift();
-    const teamSizeArray = strArray.reduce((acc, _, index, array) => {
-        if((index % 2) !== 0){
-            acc.push(_);
-        }
+    const teamSizeArray = strArray.reduce((acc, item, index) => {
+        ((index % 2) !== 0)
+            ? acc.push(item)
+            : {};
+        
         return acc;
     }, []);
 

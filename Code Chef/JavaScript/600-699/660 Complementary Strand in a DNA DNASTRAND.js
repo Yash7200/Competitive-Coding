@@ -3,11 +3,11 @@ process.stdin.on('data', (data) => input += data);
 
 const filterInput = (strArray) => {
     strArray.shift();
-    const filteredInput = strArray.reduce((acculmulator, _, index, array) => {
+    const filteredInput = strArray.reduce((acc, item, index) => {
         ((index % 2) !== 0)
-            ? acculmulator.push(array[index].trim())
+            ? acc.push(item.trim())
             : {};
-        return acculmulator;
+        return acc;
     }, []);
     return filteredInput;
 };

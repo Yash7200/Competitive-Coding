@@ -1,19 +1,18 @@
 let input = '';
-
 process.stdin.on('data', (data) => input += data);
 
 const strToInt = (strArray) => {
     strArray.shift();
     
-    const intArray = strArray.reduce((accumulator, _, index, array) => {
-        if(index % 2 === 0){
-            accumulator.push([
-                array[index].split(' ').map(Number),
-                array[index + 1].split(' ').map(Number)
-            ]);
-        }
+    const intArray = strArray.reduce((acc, item, index) => {
+        (index % 2 === 0)
+            ? acc.push([
+                item.trim().split(' ').map(Number),
+                item.trim().split(' ').map(Number)
+            ])
+            : {};
         
-        return accumulator;
+        return acc;
     }, []);
     
     return intArray;

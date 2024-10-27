@@ -4,11 +4,12 @@ process.stdin.on('data', (data) => input += data);
 const strToInt = (strArray) => {
     strArray.shift();
     const mergedInput = strArray.reduce((acc, _, index, array) => {
-        if((index % 2) !== 0){
-            acc.push(
+        ((index % 2) !== 0)
+            ? acc.push(
                 array[index - 1] + ' ' + array[index]
-            );
-        }
+            )
+            : {};
+        
         return acc;
     }, []);
     

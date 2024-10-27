@@ -3,12 +3,12 @@ process.stdin.on('data', (data) => strInput += data);
 
 const strToInt = (strArray) => {
     strArray.shift();
-    const intArray = strArray.reduce((accumulator, _, index, array) => {
-        if((index % 2) !== 0){
-            accumulator.push(
-                array[index].trim().split(' ').map(Number)
-            );
-        }
+    const intArray = strArray.reduce((acc, item, index) => {
+        ((index % 2) !== 0)
+            ? acc.push(
+                item.trim().split(' ').map(Number)
+            )
+            : {};
         
         return accumulator;
     }, []);
