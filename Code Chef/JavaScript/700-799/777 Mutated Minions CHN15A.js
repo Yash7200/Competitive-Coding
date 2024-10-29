@@ -6,7 +6,9 @@ const strToInt = (strArray) => {
     const joinedStrInput = strArray.reduce((acc, _, index, array) => {
         if((index % 2) !== 0){
             acc.push(
-                array[index - 1].trim().split(' ').slice(1) + ' ' + array[index].trim()
+                array[index - 1].trim().split(' ').slice(1)
+                + ' ' +
+                array[index].trim()
             );
         }
         
