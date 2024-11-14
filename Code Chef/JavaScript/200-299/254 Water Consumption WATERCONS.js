@@ -25,9 +25,7 @@
 process.stdin.setEncoding("utf-8");
 
 const strToInt = (strArray) => {
-    strArray.shift();
     const intArray = strArray.map((strSubArray) => Number(strSubArray.trim()));
-    
     return intArray;
 };
 
@@ -38,7 +36,7 @@ const isAtLeastWaterDrank = (waterLevel) => {
 }
 
 process.stdin.on("data", (input) => {
-    const testcases = strToInt(input.trim().split("\n"));
+    const testcases = strToInt(input.trim().split("\n").slice(1));
     
     testcases.forEach((testcase) => {
         isAtLeastWaterDrank(testcase);

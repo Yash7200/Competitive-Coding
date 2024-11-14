@@ -30,9 +30,7 @@
 process.stdin.setEncoding("utf-8");
 
 const strToInt = (strArray) => {
-    strArray.shift();
     const intArray = strArray.map((strSubArray) => strSubArray.split(" ").map(Number));
-    
     return intArray;
 };
 
@@ -42,7 +40,7 @@ const countMinInvesting = (earnings, taxSlab) => {
 };
 
 process.stdin.on("data", (input) => {
-    const testcases = strToInt(input.trim().split("\n"));
+    const testcases = strToInt(input.trim().split("\n").slice(1));
     
     testcases.forEach((testcase) => {
         const [earnings, taxSlab] = testcase;

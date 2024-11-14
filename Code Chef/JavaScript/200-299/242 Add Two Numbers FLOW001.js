@@ -27,9 +27,7 @@
 process.stdin.setEncoding("utf-8");
 
 const strToInt = (strArray) => {
-    strArray.shift();
     const intArray = strArray.map((strTestcase) => strTestcase.split(" ").map(Number));
-    
     return intArray;
 };
 
@@ -41,7 +39,7 @@ const countSum = (testcases) => {
 };
 
 process.stdin.on("data", (input)=>{
-    const testcases = strToInt(input.trim().split("\n"));
+    const testcases = strToInt(input.trim().split("\n").slice(1));
     
     countSum(testcases);
 });

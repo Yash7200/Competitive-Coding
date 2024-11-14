@@ -27,9 +27,7 @@
 process.stdin.setEncoding("utf-8");
 
 const strToInt = (strArray) => {
-  strArray.shift();
   const intArray = strArray.map((strItem) => strItem.split(" ").map(Number));
-
   return intArray;
 };
 
@@ -44,7 +42,7 @@ const isGoodTurn = (testCases) => {
 }
 
 process.stdin.on("data", (input) => {
-  const testCases = strToInt(input.trim().split("\n"));
+  const testCases = strToInt(input.trim().split("\n").slice(1));
 
   isGoodTurn(testCases);
 });

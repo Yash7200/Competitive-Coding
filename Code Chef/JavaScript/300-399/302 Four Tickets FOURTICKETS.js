@@ -1,9 +1,7 @@
 process.stdin.setEncoding("utf-8");
 
 const strToInt = (strArray) => {
-    strArray.shift();
     const intArray = strArray.map(Number);
-    
     return intArray;
 };
 
@@ -15,7 +13,7 @@ const isExceeding1000 = (priceOf1Ticket) => {
 }
 
 process.stdin.on("data", (input) => {
-    const testcases = strToInt(input.trim().split("\n"));
+    const testcases = strToInt(input.trim().split("\n").slice(1));
     
     testcases.forEach((priceOf1Ticket) => {
         isExceeding1000(priceOf1Ticket);
