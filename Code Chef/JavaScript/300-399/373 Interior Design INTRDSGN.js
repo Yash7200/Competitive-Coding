@@ -1,9 +1,7 @@
 process.stdin.setEncoding("utf-8");
 
 const strToInt = (strArray) => {
-    strArray.shift();
     const intArray = strArray.map((strItem) => strItem.split(" ").map(Number));
-    
     return intArray;
 };
 
@@ -16,5 +14,10 @@ const whichStyleCostsLess = (style1_floorTiling, style1_wallPaint, style2_floorT
 };
 
 process.stdin.on("data", (input) => {
-    const testcases = strToInt(input.trim().split("\n"));
+    const testcases = strToInt(input.trim().split("\n").slice(1));
+    
+    testcases.forEach((testcase) => {
+        const [style1_floorTiling, style1_wallPaint, style2_floorTiling, style2_wallPaint] = testcase;
+        whichStyleCostsLess(style1_floorTiling, style1_wallPaint, style2_floorTiling, style2_wallPaint);
+    });
 });
