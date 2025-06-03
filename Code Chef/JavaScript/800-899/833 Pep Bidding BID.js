@@ -60,8 +60,8 @@ const findTeamForBidding = (teamA, teamP) => {
     
 }
 
-process.stdin.on('end', async() => {
-    const testcases = await strToInt(input.trim().split('\n').slice(1))
+process.stdin.on('end', () => {
+    const testcases = strToInt(input.trim().split('\n').slice(1))
     .then((intArray) => mergeInputs(intArray));
     
     testcases.forEach((testcase) => {
