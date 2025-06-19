@@ -1,65 +1,41 @@
-const romanCharToInt = (romanStrArr) => {
-    const romanInts = {
-       I: 1,
-       V: 5,
-       X: 10,
-       L: 50,
-       C: 100,
-       D: 500,
-       M: 1000,
-    };
-    const intArray = romanStrArr.reduce((acc, romanChar) => {
-        acc.push(romanInts[romanChar]);
-        return acc;
-    }, []);
-    
-    return intArray;
+const romanStrToNum = (romanStrArray) => {
+    const romanInt = {
+        I: 1,
+        V: 5,
+        X: 10,
+        L: 50,
+        C: 100,
+        D: 500,
+        M: 1000
+    }
+    const numArray = romanStrArray.map((romanChar) => romanInt[romanChar])
+
+    return numArray;
 };
 
-const joinItems = (intArray) => {
-    const jointArr = intArray.reduce((acc, value, index, arr) => {
-        const isNullValue = (value) => value === null;
-        const isValidCurrentValue = !isNullValue(value);
-        const isValidNextValue = !isNullValue(arr[index + 1]);
-        const isValidNext2ndValue = !isNullValue(arr[index + 2]);
+const getNum = (numArray) => {
+    const arrayLength = numArray.length;
+    let finalNum = 0;
+
+    numArray.forEach((num, index) => {
+        const isNotLastItem = index < arrayLength;
+        const nextNum = numArray[index + 1];
+        const isSmallThanNextNum = num < nextNum;
         
-        const is2TimeRepeated = (value === arr[index + 1]) && isValidCurrentValue && isValidNextValue;
-        const is3TimeRepeated = is2TimeRepeated && (value === arr[index + 2]) && isValidNext2ndValue;
-        
-        if(is3TimeRepeated){
-            acc.push(value + arr[index + 1] + arr[index + 2]);
-            arr[index + 1] = null;
-            arr[index + 2] = null;
-        }else if(is2TimeRepeated){
-            acc.push(value + arr[index + 1]);
-            
-            arr[index + 1] = null;
-        }else if(value !== null){
-            acc.push(value);
+        if(isNotLastItem && isSmallThanNextNum) {
+            finalNum -= num
+            return;
         }
-        return acc;
-    }, []);
-    return jointArr;
-};
+        finalNum += num;
+    });
 
-const subtractSmallNums = (array) => {
-    const arrayWithSubtraction = array.reduce((acc, value, index, arr) => {
-        if(value < arr[index + 1]){
-            acc.push(-1 * value);
-        }else{
-            acc.push(value);
-        }
-        return acc;
-    }, []);
-    return arrayWithSubtraction;
-};
-
-const romanToInt = (romanStr) => {
-    romanStr = romanStr.trim();
-    const intArray = romanCharToInt(romanStr.split(''));
-    const jointIntArray = joinItems(intArray);
-    const finalArray = subtractSmallNums(jointIntArray);
-    const finalNum = finalArray.reduce((acc, value) => acc + value, 0);
-    
     return finalNum;
+};
+
+const romanToInt = (str) => {
+    const romanStrArray = str.trim().split('')
+    const numArray = romanStrToNum(romanStrArray);
+    const num = getNum(numArray);
+
+    return num;
 };
