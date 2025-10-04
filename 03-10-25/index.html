@@ -1,0 +1,45 @@
+<div class="row">
+  <p class="wide-block"></p>
+  <p class="wide-block"></p>
+</div>
+
+<div class="row">
+  <p class="long-block"></p>
+  <p class="long-block"></p>
+  <p class="long-block"></p>
+  <p class="long-block"></p>
+  <p class="long-block"></p>
+  <p class="long-block"></p>
+</div>
+
+<div class="row">
+  <p class="wide-block"></p>
+  <p class="wide-block"></p>
+</div>
+<style>
+  body {
+    margin: 0;
+    padding: 40px 30px;
+    background: #23384B;
+  }
+  p {
+    margin: 0;
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+  }
+  .row:not(:last-child){
+    margin-bottom: 20px;
+  }
+  .wide-block {
+    width: 100px;
+    height: 40px;
+    background: #F0CD48;
+  }
+  .long-block {
+    width: 40px;
+    height: 100px;
+    background: #F0CD48;
+  }
+</style>
