@@ -1,0 +1,66 @@
+<div class="shape-wrapper">
+    <div class="half-circle-down red-background dimensions"></div>
+    <div class="piller red-background"></div>
+</div>
+
+<div class="shape-wrapper">
+    <div class="half-circle-up red-background dimensions"></div>
+    <div class="piller red-background"></div>
+</div>
+
+<div class="shape-wrapper">
+    <div class="half-circle-down red-background dimensions"></div>
+    <div class="piller red-background"></div>
+</div>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #3F4869;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-wrapper {
+        display: flex;
+        justify-content:space-between;
+    }
+
+    .shape-wrapper {
+        display: flex;
+        position: relative;
+        /* width: 100px; */
+        margin: 0 20px;
+    }
+
+    .piller {
+        height: 100dvh;
+        width: 20px;
+    }
+
+    .dimensions {
+        width: 100px;
+        height: 50px;
+    }
+
+    .red-background {
+        background-color: #E25C57;
+    }
+
+    .half-circle-down {
+        position: absolute;
+        border-radius: 0 0 50px 50px;
+        left: -40px;
+    }
+
+    .half-circle-up {
+        position: absolute;
+        border-radius: 50px 50px 0 0;
+        align-self: flex-end;
+        left: -40px;
+    }
+</style>
