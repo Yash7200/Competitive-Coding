@@ -36,7 +36,7 @@ jobs:
       - name: Upload subdirectory
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '/Frontend Mentor/qr-code-component-main'
+          path: './Frontend Mentor/qr-code-component-main'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
