@@ -1,0 +1,55 @@
+<p class="line color"></p>
+<div class="wrapper">
+  <p class="piller color"></p>
+  <p class="piller color"></p>
+</div>
+<div class="wrapper-2">
+  <p class="line-2 color"></p>
+  <p class="line-2 color"></p>
+</div>
+<p class="left-circle color"></p>
+<p class="right-circle color"></p>
+<style>
+  body{
+    margin: 16px 0;
+    height: 100dvh;
+    background: #050044;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  p{margin: 0}
+  .color{background: #D62E65}
+  .line{
+    width: 130px;
+    height: 30px;
+  }
+  .wrapper, .wrapper-2{
+    width:130px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .piller{
+    height: 100px;
+    width: 30px;
+  }
+  .left-circle, .right-circle{
+      top: 136;
+      left: 55;
+      position: absolute;
+      height: 80px;
+      width: 80px;
+      border-radius: 100% 0 0 0;
+  }
+  .right-circle{
+      left: auto;
+      right: 55;
+      border-radius: 0 100% 0 0;
+  }
+  .wrapper-2{width: 100dvw;}
+  .line-2{
+      height: 30px;
+      width: 165px;
+  }
+</style>
