@@ -1,0 +1,46 @@
+<div class="wrapper">
+  <div class="line-1"></div>
+  <div class="line-2"></div>
+</div>
+<div class="wrapper">
+  <div class="circle"></div>
+  <div class="circle"></div>
+</div>
+<div class="wrapper">
+  <div class="line-1"></div>
+  <div class="line-2"></div>
+</div>
+<style>
+  body{
+    margin: 0;
+    height: 100%;
+    background: #48BF7D;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 35px;
+  }
+  .wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  .line-1,.line-2 {
+    width: 175px;
+    height: 40px;
+    border-radius: 0 40px 40px 0;
+    background: #0B2429;
+  }
+  .line-2{
+    border-radius: 40px 0 0 40px;
+  }
+  .wrapper:nth-child(2){
+    justify-content: center;
+    gap: 50px;
+  }
+  .circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #0B2429;
+  }
+</style>
