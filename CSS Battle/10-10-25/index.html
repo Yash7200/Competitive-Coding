@@ -1,0 +1,49 @@
+<div class="main-wrapper">
+  <div class="curved-box color"></div>
+  <div class="wrapper">
+    <div class="piller color"></div>
+    <div class="piller color"></div>
+  </div>
+</div>
+<div class="circle"></div>
+<div class="rect color"></div>
+<style>
+  body{
+    margin:0;
+    background:#D27644;
+    height:100dvh;
+    display:flex;
+    flex-flow:column;
+    align-items:center;
+    justify-content:flex-end;
+  }
+  .main-wrapper{
+    justify-self:flex-end;
+    width:150px;
+  }
+  .color{background:#000}
+  .curved-box {
+    height:150px;
+    border-radius:100% 100% 0 0;
+  }
+  .wrapper{
+    display:flex;
+    justify-content:space-between;
+  }
+  .piller{
+    width:15px;
+    height:30px;
+  }
+  .rect{
+    width:180px;
+    height:30px;
+  }
+  .circle{
+    top:150;    
+    position:absolute;
+    background:#FEF6E2;
+    height:20px;
+    width:20px;
+    border-radius:50%;
+  }
+</style>
