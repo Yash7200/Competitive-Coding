@@ -1,0 +1,45 @@
+<div class="oval color"></div>
+<div class="ring"></div>
+<div class="ring-mask"></div>
+<div class="mic-end color"></div>
+<style>
+  body{
+    margin:0;
+    background:#E8AD6D;
+    display:flex;
+    height:100%;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+  }
+  .color{background:#3b240c}
+  .oval{
+    z-index:1;
+    width:60px;
+    height:100px;
+    border-radius:100px;
+    margin-bottom:70px
+  }
+  .ring{
+    width:100px;
+    height:50px;
+    position:absolute;
+    border-radius:0 0 100px 100px;
+    top:105px;
+    border:30px solid #3b240c;
+  }
+  .ring-mask{
+    position:absolute;
+    top:105;
+    width:160px;
+    height:40px;
+    background:#E8AD6D;
+  }
+  .mic-end{
+    position:absolute;
+    top:204px;
+    height:30px;
+    width:30px;
+    border-radius:0 0 50% 50%;
+  }
+</style>
