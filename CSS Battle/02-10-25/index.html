@@ -1,0 +1,60 @@
+<div class="ring"></div>
+<div class="wrapper">
+  <div class="earcup color"></div>
+  <div class="earcup color right"></div>
+</div>
+<div class="eye-wrap">
+  <div class="eye color"></div>
+  <div class="eye color"></div>
+</div>
+<style>
+  body{
+    margin:0;
+    background:#FEF6E2;
+    padding:30px;
+    height:100%;
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    box-sizing:border-box;
+  }
+  .color{background:#ED736E}
+  .ring{
+    width:135px;
+    height:75px;
+    padding:0 2.5px;
+    align-self:center;
+    border:40px solid #ED736E;
+    border-radius:800px 800px 0 0;
+    border-bottom:0;
+  }
+  .wrapper{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+  }
+  .earcup{
+    height:130px;
+    width:100px;
+    border-radius:60px 0 50px 50px;
+  }
+  .right{
+    border-radius:0 60px 50px 50px;
+  }
+  .eye-wrap{
+    position:absolute;
+    left:130;
+    width:140px;
+    height:100px;
+    /* border:1px solid green; */
+    display:flex;
+    justify-content:center;
+    gap:45px;
+    align-items:center;
+  }
+  .eye{
+    height:30px;
+    width:15px;
+    border-radius:100%;
+  }
+</style>
