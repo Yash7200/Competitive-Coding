@@ -1,0 +1,37 @@
+<div class="line color"></div>
+<div class="line color"></div>
+<div class="circle color"></div>
+<div class="circle color right"></div>
+<style>
+  body{
+    margin:0;
+    background:#243d83;
+    height:100%;
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    gap:20px;
+  }
+  .color{background:#E8AD6D}
+  .line{
+    width:261px;
+    height:20px;
+    margin-left:65px;
+  }
+  .line:nth-child(2){
+    width:270px;
+  }
+  .circle{
+    position:absolute;
+    top:96;
+    left:110;
+    height:53px;
+    width:106px;
+    border-radius: 60px 60px 0 0;
+    clip-path:inset(0 0 9px 0);
+  }
+  .right{
+    left:auto;
+    right:66;
+  }
+</style>
