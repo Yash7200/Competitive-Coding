@@ -1,0 +1,37 @@
+<div class="wrapper">
+  <div class="rect color"></div>
+  <div class="rect color"></div>
+</div>
+<div class="wrapper">
+  <div class="rect color"></div>
+  <div class="rect color"></div>
+</div>
+<div class="rect color"></div>
+<div class="piller color"></div>
+<style>
+  body{
+    margin:30;
+    background:#FFEA9B;
+  }
+  .wrapper{
+    display:flex;
+    justify-content:space-between;
+  }
+  .color{background:#4A9A86}
+  .rect{
+    width:100px;
+    height:30px;
+  }
+  .wrapper:nth-child(2){
+    margin-inline:30px;
+  }
+  body > .rect:nth-of-type(3){
+    margin-inline: 60px;
+    width:220px;
+  }
+  .piller{
+    margin:0 auto;
+    height:150px;
+    width:30px;
+  }
+</style>
