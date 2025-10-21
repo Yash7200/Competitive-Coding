@@ -1,0 +1,25 @@
+<div class="wrapper flex">
+  <div class="circle color"></div>
+  <div class="flex">
+    <div class="circle color"></div>
+    <div class="circle left color"></div>
+  </div>
+  <div class="circle left color"></div>
+</div>
+<style>
+  body{
+    height:100%;
+    margin-top:60;
+    margin-inline:10px;
+    background:#7DDDEB;
+  }
+  .flex{display:flex}
+  .wrapper{justify-content:space-between}
+  .color{background:#4763B1}
+  .circle{
+    width:90px;
+    height:180px;
+    border-radius:0 90px 90px 0;
+  }
+  .left{border-radius:90px 0 0 90px}
+</style>
