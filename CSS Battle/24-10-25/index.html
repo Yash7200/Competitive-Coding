@@ -1,0 +1,44 @@
+<div>
+  <p class="sqr-1 bg"></p>
+  <p class="sqr-2 bg"></p>
+</div>
+<p class="sqr-3 bg"></p>
+<div>
+  <p class="sqr-2 bg"></p>
+  <p class="sqr-1 bg"></p>
+</div>
+<style>
+  body{
+    margin:10;
+    height:100%;
+    background:#4F77FE;
+    display:flex;
+    flex-flow:column;
+    gap:25px;
+  }
+  p{margin:0}
+  .bg{background:#FFEFF2}
+  .sqr-1{
+    margin-left:40;
+    width:50;
+    height:40;
+  }
+  .sqr-2{
+    width:40;
+    height:50;
+  }
+  .sqr-3{
+    width:50;
+    height:50;
+    align-self:center;
+  }
+  div:nth-child(3){
+    align-self:flex-end;
+  }
+  .sqr-2:nth-child(1){
+    margin-left:50;
+  }
+  .sqr-1:nth-child(2){
+    margin:0;
+  }
+</style>
