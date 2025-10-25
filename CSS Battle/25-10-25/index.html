@@ -1,0 +1,54 @@
+<div class="wrapper">
+  <p class="line bg"></p>
+  <div class="plus">
+    <p class="v-Line bg"></p>
+    <p class="h-Line bg"></p>
+  </div>
+</div>
+<div class="wrapper">
+  <p class="line bg"></p>
+  <div class="plus">
+    <p class="v-Line bg"></p>
+    <p class="h-Line bg"></p>
+  </div>
+</div>
+<div class="wrapper">
+  <p class="line bg"></p>
+  <div class="plus">
+    <p class="v-Line bg"></p>
+    <p class="h-Line bg"></p>
+  </div>
+</div>
+<style>
+  body{
+    margin:0;
+    padding:45 30;
+    display:flex;
+    flex-flow:column;
+    gap:30px;
+    background:#E8AD6D;
+  }
+  p{margin:0}
+  .bg{background:#3B240C}
+  .wrapper{
+    display:flex;
+    align-items:center;
+    gap:47px;
+  }
+  .line{
+    width:260px;
+    height:15px;
+  }
+  .plus{position:relative}
+  .h-line{
+    position:absolute;
+    top:17;
+    left:-17;
+    width:50px;
+    height:16px;
+  }
+  .v-Line{
+    width:16px;
+    height:50px;
+  }
+</style>
