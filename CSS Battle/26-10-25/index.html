@@ -1,0 +1,33 @@
+<div class="oval bg"></div>
+<div class="overlay">
+  <div class="curved-rect bg"></div>
+</div>
+<style>
+  body{
+    margin-top:5;
+    background:#3F4869;
+  }
+  .bg{background:#DE6B67}
+  .oval{
+    margin:0 auto;
+    width:210px;
+    height:290px;
+    border-radius:105px;
+  }
+  .overlay{
+    position:absolute;
+    top:75;
+    left:95;
+    background:#3F4869;
+    width:210px;
+    height:150px;
+    display:flex;
+  }
+  .curved-rect{
+    align-self:center;
+    width:210px;
+    height:170px;
+    border-radius:80px;
+    clip-path:inset(50px 0 50px 0)
+  }
+</style>
