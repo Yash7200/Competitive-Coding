@@ -1,0 +1,35 @@
+<div class="piller bg"></div>
+<div>
+  <div class="line bg"></div>
+  <div class="box bg"></div>
+  <div class="line bg"></div>
+</div>
+<div class="piller bg"></div>
+<style>
+  body{
+    margin:0;
+    display:flex;
+    flex-flow:column;
+    gap:20px;
+    background:#4763B1;
+  }
+  .bg{background:#D9D9D9}
+  .piller{
+    margin:0 auto;
+    width:60px;
+    height:100px;
+  }
+  div:nth-child(2){
+    display:flex;
+    gap:80px;
+  }
+  .line{
+    width:100px;
+    height:60px;
+  }
+  .box{
+    align-self:center;
+    width:40px;
+    height:30px;
+  }
+</style>
