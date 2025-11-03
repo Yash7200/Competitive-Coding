@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="finger bg"></div>  
+  <div class="finger bg"></div>  
+  <div class="finger bg"></div>  
+</div>
+<div class="circle bg"></div>
+<div class="container mid">
+  <div class="finger bg"></div>  
+  <div class="finger bg"></div>  
+  <div class="finger bg"></div>  
+</div>
+<div class="container bottom">
+  <div class="finger bg"></div>  
+  <div class="finger bg"></div>  
+  <div class="finger bg"></div>  
+</div>
+<style>
+body{
+  background:#62306D;
+  display:flex;
+  justify-content:center;
+}
+.bg{background:#E38F66}
+.container{
+  position:absolute;
+  top:0;
+  width:70px;
+  height:54px;
+  display:flex;
+  border-radius:0 0 15px 15px;
+}
+.bottom{
+  rotate:180deg;
+  top:262;
+}
+.mid{top:211}
+.finger{
+  width:23px;
+  height:54px;
+  border-radius:0 0 15px 15px;
+}
+.circle{
+  position:absolute;
+  top:75;
+  height:150px;
+  width:150px;
+  border-radius:50%;
+}
+.mid .finger{
+  width:24px;
+  height:24px;
+  border-radius:50px;
+}
+</style>
