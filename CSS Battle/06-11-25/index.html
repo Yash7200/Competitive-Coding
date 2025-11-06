@@ -1,0 +1,35 @@
+<div>
+  <div class="circle bg"></div>
+  <div class="rect bg abs"></div>
+</div>
+<div class="mid">
+  <div class="rect bg"></div>
+  <div class="circle bg abs"></div>
+</div>
+<div>
+  <div class="circle bg"></div>
+  <div class="rect bg abs"></div>
+</div>
+<style>
+  body{
+    margin:0;
+    padding:35 40;
+    display:flex;
+    gap:10px;
+    background:#556D7F;
+  }
+  .bg{background:#EBCB58}
+  .abs{position:absolute}
+  .circle{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+  }
+  .rect{
+    top:115;
+    width:100px;
+    height:150px;
+  }
+  .mid{translate:rotate(180deg)}
+  .mid .circle{bottom:35}
+</style>
