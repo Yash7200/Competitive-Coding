@@ -1,0 +1,38 @@
+<div class="wrapper">
+  <div class="pill-h bg-1"></div>
+  <div class="pill-v bg-2"></div>
+</div>
+<div class="wrapper last">
+  <div class="pill-v bg-2"></div>
+  <div class="pill-h bg-1"></div>
+</div>
+<style>
+  body{
+    margin:0;
+    padding:20 70;
+    display:flex;
+    flex-flow:column;
+    gap:20px;
+    background:#FFF8EA;
+  }
+  .bg-1{background:#DA6C8E}
+  .bg-2{background:#81D2B0}
+  .wrapper{
+    display:flex;
+    gap:20px;
+    align-items:end;
+  }
+  .pill-h,.pill-v{
+    width:120px;
+    height:50px;
+    border-radius:30px;
+  }
+  .pill-v{
+    width:50px;
+    height:120px;
+  }
+  .last{
+    margin-left:70;
+    align-items:start;
+  }
+</style>
