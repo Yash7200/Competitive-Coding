@@ -1,0 +1,48 @@
+<div class="pill bg br-full"></div>
+<div class="pill bg br-full"></div>
+<div class="overlay abs flex">
+  <div class="pill-v bg br-full"></div>
+  <div class="pill-v bg br-full"></div>
+  <div class="wrapper abs flex">
+    <div class="circle bg br-full"></div>
+    <div class="circle bg br-full"></div>
+  </div>
+</div>
+<style>
+  :root{
+    --body-color:#FFE5AC;
+    --item-color:#313131;
+  }
+  body{
+    margin:0;
+    height:100%;
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    background:var(--body-color);
+  }
+  .bg{background:var(--item-color)}
+  .br-full{border-radius:30px}
+  .flex{display:flex}
+  .abs{position:absolute}
+  .pill,.pill-v{
+    width:120px;
+    height:50px;
+  }
+  .overlay{top:105}
+  .pill-v{
+    width:70;
+    transform:rotate(90deg);
+    background:var(--body-color);
+  }
+  .wrapper{
+    left:20;
+    gap:40px;
+  }
+  .circle{
+    width:30px;
+    height:30px;
+  }
+</style>
