@@ -1,0 +1,41 @@
+<div class="tri-left"></div>
+<div class="sqr"></div>
+<div class="tri-right"></div>
+<style>
+  :root{
+    --bg-color:#6F9893;
+    /* --bg-color:#fff; */
+    --tri-color:#D9D9D9;
+    /* --tri-color:#DD6B4D; */
+    --sqr-color:#394257;
+    /* --sqr-color:#DD6B4D; */
+  }
+  body{
+    margin:0;
+    padding:15 25;
+    display:flex;
+    gap:81px;
+    background:var(--bg-color)
+  }
+  .tri-left,.tri-right{
+    width:0;
+    height:0;
+    border-top:135px solid transparent;
+    border-right:135px solid var(--tri-color);
+    border-bottom:135px solid transparent;
+  }
+  .sqr{
+    z-index:-1;
+    position:absolute;
+    top:100;
+    left:149.5;
+    width:100px;
+    height:100px;
+    background:var(--sqr-color);
+    transform:rotate(135deg);
+  }
+  .tri-right{
+    border-right:0;
+    border-left:135px solid var(--tri-color);
+  }
+</style>

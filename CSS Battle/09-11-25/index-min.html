@@ -1,0 +1,29 @@
+<div class="tri-left"></div>
+<div class="sqr"></div>
+<div class="tri-left last"></div>
+<style>
+  body{
+    margin:15 25;
+    display:flex;
+    gap:80px;
+    background:#6F9893
+  }
+  .tri-left{
+    width:0;
+    height:0;
+    border-top:135px solid transparent;
+    border-right:135px solid #D9D9D9;
+    border-bottom:135px solid transparent;
+  }
+  .sqr{
+    z-index:-1;
+    position:absolute;
+    top:100;
+    left:149.5;
+    width:100;
+    height:100;
+    background:#394257;
+    transform:rotate(135deg);
+  }
+  .last{transform:rotate(180deg)}
+</style>
