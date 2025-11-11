@@ -1,0 +1,31 @@
+<div class="line-sm bg"></div>
+<div class="ring"></div>
+<div class="line-big bg"></div>
+<style>
+  body{
+    margin:0;
+    height:100%;
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+    gap:120px;
+    background:#050044;
+  }
+  .bg{background:#A4215D}
+  .line-sm,.line-big{
+    width:260px;
+    height:40px;
+  }
+  .ring{
+    z-index:-1;
+    position:absolute;
+    top:30;
+    height:100;
+    width:100;
+    border:40px solid #F3EAD2;
+    border-radius:50%;
+    clip-path:inset(20px 0 0 0)
+  }
+  .line-big{width:300px}
+</style>
