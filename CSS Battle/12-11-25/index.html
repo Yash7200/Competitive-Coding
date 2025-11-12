@@ -1,0 +1,47 @@
+<div class="line-wrapper flex">
+  <div class="pillar bg"></div>
+  <div class="wrapper flex">
+    <div class="sqr bg"></div>
+    <div class="sqr bg"></div>
+  </div>
+</div>
+<div class="rect bg"></div>
+<div class="line-wrapper last flex">
+  <div class="wrapper flex">
+    <div class="sqr bg"></div>
+    <div class="sqr bg"></div>
+  </div>
+  <div class="pillar bg"></div>
+</div>
+<style>
+  body{
+    margin:16;
+    display:flex;
+    flex-flow:column;
+    background:#BDE4C1;
+  }
+  .bg{background:#9F6766}
+  .flex{display:flex}
+  .line-wrapper{
+    gap:16px;
+    align-self:flex-end;
+  }
+  .wrapper{
+    flex-flow:column;
+    gap:40px;
+  }
+  .pillar{
+    width:40px;
+    height:100px;
+  }
+  .sqr{
+    width:30px;
+    height:30px;
+  }
+  .rect{
+    margin:0 auto;
+    width:195px;
+    height:68px;
+  }
+  .last{align-self:flex-start}
+</style>
