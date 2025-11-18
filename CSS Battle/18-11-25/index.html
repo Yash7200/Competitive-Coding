@@ -1,0 +1,40 @@
+<div class="flex">
+  <div class="line bg"></div>
+  <div class="line big bg"></div>
+  <div class="line bg"></div>
+</div>
+<div class="flex mid">
+  <div class="pillar bg"></div>
+  <div class="pillar bg"></div>
+</div>
+<div class="flex">
+  <div class="line bg"></div>
+  <div class="line big bg"></div>
+  <div class="line bg"></div>
+</div>
+<style>
+  body{
+    margin:0;
+    height:100%;
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+    background:#555FD9;
+  }
+  .bg{background:#F2A842}
+  .flex{
+    display:flex;
+    gap:20px;
+  }
+  .line{
+    width:90px;
+    height:20px;
+  }
+  .big{width:180px}
+  .mid{gap:100px}
+  .pillar{
+    width:40px;
+    height:160px;
+  }
+</style>
