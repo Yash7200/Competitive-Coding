@@ -1,0 +1,32 @@
+<div class="frame"></div>
+<div class="frame bottom"></div>
+<div class="frame abs left"></div>
+<div class="frame abs right"></div>
+<style>
+  body{
+    margin:0;
+    height:100%;
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    gap:30px;
+    background:#D86F45;
+  }
+  .abs{position:absolute}
+  .frame{
+    align-self:center;
+    width:50px;
+    height:70px;
+    border:20px solid #FFF;
+    border-bottom:0
+  }
+  .bottom{transform:rotate(180deg)}
+  .left{
+    transform:rotate(-90deg);
+    left:55
+  }
+  .right{
+    transform:rotate(90deg);
+    right:55
+  }
+</style>
