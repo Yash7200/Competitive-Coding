@@ -1,0 +1,35 @@
+<div class="frame"></div>
+<div class="rounded-path"></div>
+<div class="frame right"></div>
+<style>
+  body{
+    margin:0;
+    display:flex;
+    height:100%;
+    background:#62306d;
+  }
+  .rounded-path{
+    align-self:center;
+    margin:40 auto 0 auto;
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    border:100px solid #fff;
+    clip-path:inset(0 0 140px 0)
+  }
+  .frame{
+    position:absolute;
+    top:170;
+    left:-70;
+    width:57px;
+    height:80px;
+    border:20px solid #fff;
+    border-right:25px solid #fff;
+    transform:skew(-39deg);
+  }
+  .right{
+    left:370;
+    transform:skew(39deg);
+    border-left:25px solid #fff
+  }
+</style>
