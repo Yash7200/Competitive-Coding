@@ -1,0 +1,43 @@
+<div class="line bg"></div>
+<div class="mid-row">
+  <div class="line bg"></div>
+  <div class="rect bg"></div>
+  <div class="rect left bg"></div>
+</div>
+<style>
+  body{
+    margin:20;
+    height:100%;
+    display:flex;
+    flex-flow:column;
+    align-items:center;
+    gap:20px;
+    background:#3F4869
+  }
+  .bg{background:#70B7A5}
+  .line{
+    width:180;
+    height:20;
+    box-shadow:-5.2px 240px #70B7A5
+  }
+  .mid-row{
+    display:flex;
+    margin-left:-190
+  }
+  .mid-row .line{
+    margin:80 5;
+    transform:rotate(90deg);
+    box-shadow:0 -240px #70B7A5
+  }
+  .rect{
+    width:50;
+    height:65;
+    box-shadow:0 115px #70B7A5
+  }
+  .left{
+    position:absolute;
+    top:117.5;
+    left:232;
+    transform:rotate(90deg)
+  }
+</style>

@@ -1,0 +1,58 @@
+<div class="line-h bg"></div>
+<div class="mid-row">
+  <div class="line-v bg"></div>
+  <div class="wrapper">
+    <div class="rect-v bg"></div>
+    <div class="row-wrapper">
+      <div class="rect-h bg"></div>
+      <div class="rect-h bg"></div>
+    </div>
+    <div class="rect-v bg"></div>
+  </div>
+  <div class="line-v bg"></div>
+</div>
+<div class="line-h bg last"></div>
+<style>
+  body{
+    margin:0;
+    height:100%;
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    background:#3F4869
+  }
+  .bg{background:#70B7A5}
+  .line-h{
+    width:180px;
+    height:20px;
+  }
+  .mid-row{
+    display:flex;
+    gap:20px
+  }
+  .wrapper{
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center
+  }
+  .rect-v{
+    width:50px;
+    height:65px
+  }
+  .row-wrapper{
+    display:flex;
+    gap:50px
+  }
+  .rect-h{
+    width:65px;
+    height:50px
+  }
+  .line-v{
+    width:20px;
+    height:180px
+  }
+  .last{margin-right:10}
+</style>
