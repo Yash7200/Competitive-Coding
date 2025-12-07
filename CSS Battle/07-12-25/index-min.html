@@ -1,0 +1,36 @@
+<div class="circle bg"></div>
+<div class="wrapper">
+  <div class="pillar bg"></div>
+  <div class="rect bg"></div>
+  <div class="pillar bg"></div>
+</div>
+<div class="circle bg last"></div>
+<style>
+  body{
+    margin:0;
+    height:100%;
+    display:grid;
+    place-content:center;
+    background:#E3516E
+  }
+  .bg{background:#511818}
+  .wrapper{display:flex}
+  .pillar{
+    width:70;
+    height:100;
+  }
+  .circle{
+    position:absolute;
+    top:80;
+    left:180;
+    height:40;
+    width:40;
+    border-radius:50%;
+  }
+  .rect{
+    align-self:end;
+    width:80;
+    height:60;
+  }
+  .last{top:220}
+</style>

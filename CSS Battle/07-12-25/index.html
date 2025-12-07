@@ -1,0 +1,35 @@
+<div class="circle bg  h-40"></div>
+<div class="wrapper">
+  <div class="rectSmall bg h-40"></div>
+  <div class="rectSmall bg  h-40"></div>
+</div>
+<div class="rectBig bg"></div>
+<div class="circle bg h-40 last"></div>
+<style>
+  body{
+    margin:0;
+    height:100%;
+    display:grid;
+    place-content:center;
+      background:#E3516E;
+  }
+  .bg{background:#511818}
+  .h-40{height:40}
+  .wrapper{
+    display:flex;
+    gap:80px
+  }
+  .rectSmall{width:70}
+  .circle{
+    position:absolute;
+    top:80;
+    left:180;
+    width:40;
+    border-radius:50%;
+  }
+  .rectBig{
+    width:220;
+    height:60
+  }
+  .last{top:220}
+</style>
