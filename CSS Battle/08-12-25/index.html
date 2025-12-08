@@ -1,0 +1,31 @@
+<div class="wrapper">
+  <div class="sqr w-30 bg"></div>
+  <div class="sqr w-30 bg"></div>
+</div>
+<div class="rect bg"></div>
+<div class="wrapper">
+  <div class="pillar w-30 bg"></div>
+  <div class="pillar w-30 bg"></div>
+</div>
+<style>
+  body{
+    margin:0;
+    height:100%;
+    display:grid;
+    place-content:center;
+    gap:20px;
+    background:#7DDDEB;
+  }
+  .bg{background:#2a4cac}
+  .w-30{width:30px}
+  .wrapper{
+    display:flex;
+    gap:280px
+  }
+  .sqr{height:30px}
+  .rect{
+    width:340px;
+    height:60px;
+  }
+  .pillar{height:90px}
+</style>
