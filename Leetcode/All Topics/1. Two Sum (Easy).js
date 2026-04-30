@@ -1,3 +1,4 @@
+// solution - 1
 const twoSum = (nums, target) => {
     const arrayLength = nums.length;
 
@@ -8,4 +9,27 @@ const twoSum = (nums, target) => {
             }
         }
     }
+};
+
+// solution - 2
+const twoSum = (nums, target) => {
+    let isValidTargetSum = false;
+    const validIndexes = [];
+    
+    nums.some((currentNum, currentIndex) => {
+        if(currentIndex === nums.length - 1) return true;
+        
+        const restOfArray = nums.slice(currentIndex + 1,nums.length);
+        
+        restOfArray.some((otherNum, otherIndex) => {
+            isValidTargetSum = currentNum + otherNum === target;
+            (isValidTargetSum) ? validIndexes.push(currentIndex, currentIndex+otherIndex+1) : {}
+            
+            return isValidTargetSum
+        })
+        
+        return isValidTargetSum;
+    })
+    
+    return validIndexes
 };
