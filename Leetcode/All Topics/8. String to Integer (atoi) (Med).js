@@ -1,3 +1,8 @@
+/**
+ * @param {string} s
+ * @return {number}
+*/
+
 const myAtoi = (str) => {
     const strInput = str.trim().split('')
     let numStr = '';

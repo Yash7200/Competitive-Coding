@@ -1,3 +1,8 @@
+/**
+ * @param {string} s
+ * @return {boolean}
+*/
+
 // without early exit
 const isValid = (s) => {
     const pendingBrackets = [s[0]];

@@ -1,3 +1,8 @@
+/**
+ * @param {number} x
+ * @return {boolean}
+*/
+
 const isPalindrome = (number) => {
     number = String(number);
     const reversedNumber = number.split('').reverse().join('');

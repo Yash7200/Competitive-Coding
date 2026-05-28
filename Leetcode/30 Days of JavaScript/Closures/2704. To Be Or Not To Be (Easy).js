@@ -1,3 +1,8 @@
+/**
+ * @param {string} val
+ * @return {Object}
+*/
+
 const expect = (value) => {
   return {
     toBe: (newValue) => {

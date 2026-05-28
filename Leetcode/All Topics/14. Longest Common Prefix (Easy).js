@@ -1,3 +1,8 @@
+/**
+ * @param {string[]} strs
+ * @return {string}
+*/
+
 const getCommonPrefix = (shortestStr, strArray) => {
     const isCommonPrefix = (prefix) => strArray.every((strItem) => strItem.startsWith(prefix));
 

@@ -1,3 +1,8 @@
+/**
+ * @param {number} num
+ * @return {string}
+*/
+
 const intToRoman = (num) => {
   const map = [
     { val: 1000, sym: 'M' },

@@ -1,3 +1,8 @@
+/**
+ * @param {number} num
+ * @return {string}
+*/
+
 const romanStrToNum = (romanStrArray) => {
     const romanInt = {
         I: 1,

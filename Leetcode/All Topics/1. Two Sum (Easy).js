@@ -1,3 +1,9 @@
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+*/
+
 // solution - 1
 const twoSum = (nums, target) => {
   const arrayLength = nums.length;
