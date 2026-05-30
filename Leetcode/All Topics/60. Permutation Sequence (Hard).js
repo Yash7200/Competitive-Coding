@@ -99,3 +99,40 @@ const getPermutation = (n, k) => {
     const combination = getCombinations(nums, k-1).join('');
     return combination;
 };
+
+// solution with optimized factorial calculation
+const factorials = {
+    0: 1,
+    1: 1,
+    2: 2,
+    3: 6,
+    4: 24,
+}
+const getFactorial = (num) => {
+    if(factorials[num]) return factorials[num];
+    
+    factorials[num] = num * getFactorial(num-1);
+    return factorials[num];
+}
+
+const getCombinations = (pendingNums, k) => {
+    const combos = getFactorial(pendingNums.length - 1);
+    
+    const digitIndex = parseInt(k / combos);
+    const digit = pendingNums[digitIndex];
+
+    k %= combos;
+    pendingNums = pendingNums.filter((num) => num !== digit);
+
+    if(pendingNums.length > 1) {
+        return [digit, ...getCombinations(pendingNums, k)]
+    }
+    return [digit, pendingNums[0]];
+};
+
+const getPermutation = (n, k) => {
+    const nums = Array.from({length: n}, (_,i) => ++i);
+    
+    const combination = getCombinations(nums, k-1).join('');
+    return combination;
+};
